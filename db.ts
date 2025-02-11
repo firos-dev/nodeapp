@@ -1,6 +1,5 @@
-dotenv.config()
+require("dotenv").config()
 import { DataSource, OneToOne } from "typeorm";
-import dotenv from "dotenv";
 import { User } from "./entities/User";
 
 const AppDataSource = new DataSource({

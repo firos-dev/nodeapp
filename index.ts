@@ -1,12 +1,10 @@
-
+require("dotenv").config()
 import { DataSource, OneToOne } from "typeorm";
 import express from "express";
-import dotenv from "dotenv";
 // import { setCommonHeaders } from "./middleware/cors";
 import AppDataSource from "./db";
 // import { routes } from "./routes";
 // import { notFound } from "./controllers/notFound";
-dotenv.config();
 
 const app = express();
 
