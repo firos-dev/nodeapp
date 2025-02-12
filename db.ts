@@ -16,6 +16,9 @@ const AppDataSource = new DataSource({
   logging: false, // Enables query logging
   migrations: [__dirname + "/migrations/*.ts"], // Path to your migrations
   synchronize: true,
+  ssl:{
+    rejectUnauthorized: false
+  }
 });
 
 export default AppDataSource;

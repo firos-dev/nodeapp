@@ -16,6 +16,9 @@ const AppDataSource = new typeorm_1.DataSource({
     logging: false,
     migrations: [__dirname + "/migrations/*.ts"],
     synchronize: true,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 exports.default = AppDataSource;
 //# sourceMappingURL=db.js.map
